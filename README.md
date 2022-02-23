@@ -44,7 +44,7 @@ User profiles include basic info(name, intro(optional), and recipes they've cont
 
 ⊛ Search Screen - Allows user to search for drinks by name (OPTIONAL: and filter the drinks by various categories)
 
-   Drinks will appear as the user searches (If the user types an 'A' the drinks that contain 'A' will pop up)
+   - Drinks will appear as the user searches (If the user types an 'A' the drinks that contain 'A' will pop up)
         
 ⊛ Non-alcoholic Screen - Displays all non-alcoholic drinks
 
