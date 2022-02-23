@@ -102,11 +102,4 @@ Flow Navigation (Screen to Screen)
 * Drink Information -> or results
 * Profile -> Text field to be modified. 
 ## Wireframes
-<img src="" width=800><br>
-
-### Digital Wireframes & Mockups
-<img src="" height=200>
-
-### [BONUS] Interactive Prototype
-<img src="" width=200>
-Search Bar -> Using the search bar automatically takes the user to the search page
+<img src="https://imgur.com/gallery/vi5dt2x" width=800><br>
