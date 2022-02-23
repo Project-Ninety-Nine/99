@@ -39,10 +39,15 @@ User profiles include basic info(name, intro(optional), and recipes they've cont
 
 ### 2. Screens
 ⊛ Home Screen - Presents the website logo and interactive icons that lead to other pages
+
 ⊛ Drinks Screen - Displays all drinks and their names, categories, and whether or not it's alcoholic.
+
 ⊛ Search Screen - Allows user to search for drinks by name (OPTIONAL: and filter the drinks by various categories)
-    > Drinks will appear as the user searches (If the user types an 'A' the drinks that contain 'A' will pop up)
+
+   Drinks will appear as the user searches (If the user types an 'A' the drinks that contain 'A' will pop up)
+        
 ⊛ Non-alcoholic Screen - Displays all non-alcoholic drinks
+
 ⊛ Recipe Screen - Displays drink name, ingredients, measurements, instructions, and serving glass.
 
 
