@@ -60,4 +60,4 @@ User profiles include basic info(name, intro(optional), and recipes they've cont
 * Drink Selection -> Search page available
 * Drink Information -> or results
 ## Wireframes
-<img src="https://imgur.com/gallery/vi5dt2x" width=800><br>
+<img src="https://imgur.com/a/qHqMnjS" width=800><br>
