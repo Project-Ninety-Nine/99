@@ -1,0 +1,72 @@
+body {
+  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  background: linear-gradient(180deg, #305EEC,#30A5EC);
+}
+.book-img{
+  height: 10.625rem;
+  max-width: 8.25rem;
+  padding-top: 0;
+}
+.book-card-details, .on-list{
+  font-size: 14px;
+  color:#333;
+}
+.on-list {
+  font-size: 11px;
+}
+
+.book-title{
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+.book-author{
+  font-style: italic;
+  font-size: 15px;
+}
+.book-title > .badge {
+  font-size: 1rem;
+}
+.buy{
+  background-color: #567b95 !important;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/*.pd-text:hover {
+  color: #29f6ce;
+}
+.search-text:hover {
+  color: #29f6ce;
+}
+.na-text:hover {
+  color: #29f6ce;
+}*/
+
+.mix {
+  text-decoration: none;
+  color: black;
+}
+.mix:hover {
+  color: #14d2b9;
+}
+.ht {
+  text-decoration: none;
+  color: black;
+}
+.ht:hover {
+  color: #29f6ce;
+}
+.shrik {
+  font-family: 'Shrikhand';
+}
+
+.bg-color{
+  --bs-bg-opacity: 1;
+  background-color: rgba(246, 1, 1, 0.85);
+}
+.recipe-img{
+  height: 17.625rem;
+  max-width: 8.25rem;
+  padding-top: 0;
+}
