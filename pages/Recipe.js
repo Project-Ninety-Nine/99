@@ -82,7 +82,7 @@ render() {
                 </div>
             </>
         );
-    }
+   }
 }
 
 const Recipe = withParams(Recipes);
