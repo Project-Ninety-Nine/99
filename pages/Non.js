@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import DrinkCard from '../components/DrinkCard'
-import { withParams } from "../util/Utilities";
 import Header from "../components/Header";
+import '../App.css';
 
-class NonLists extends Component {
+class NonList extends Component {
 constructor(props){
 	super(props);
 	this.state = {drinks: []}
@@ -45,5 +45,4 @@ render() {
         );
     }
 }
-const NonList = withParams(NonLists);
 export default NonList;

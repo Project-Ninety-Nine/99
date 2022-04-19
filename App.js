@@ -12,6 +12,8 @@ function App(){
 	<>
 		<Router>
             <div className = "container">
+            <div className = "row col-12 text-center">
+            </div>
                 <div className="row">
                     <div className="col-12">
                         <Routes>
