@@ -31,12 +31,13 @@ render() {
         <>
             <br/>
             <Header />
+            <h2 className = "text-center shrik" style = {{color: 'Black'}}>Popular Drinks</h2>
             <br/>
             <div className="row row-cols-sm-2 row-cols-md-3 row-cols-xxl-6">
 				{
                 	this.state.drinks.map((drink) => {
                 		return(
-                           <DrinkCard drink={drink} key={drink["idDrink"]} />
+                           <DrinkCard drink={drink} key={drink.idDrink} />
                         )
                 	})
                 }

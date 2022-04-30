@@ -26,11 +26,28 @@ const getDrinks = async () => {
     }
     getDrinks();
 }
+
+componentDidMount() {
+let url = "https://www.thecocktaildb.com/api/json/v2/" + this.apiKey + "/filter.php?a=Non_Alcoholic";
+
+const getDrinks = async () => {
+	await axios.get(url)
+	    .then(response =>{
+	        //set state variable
+	          console.log(response);
+			  this.setState({drinks: response.data.drinks})
+		}).catch((err) =>{
+			console.log("Fetch Error: " + err)
+		});
+    }
+    getDrinks();
+}
 render() {
         return (
         <>
             <br/>
             <Header />
+            <h2 className = "text-center shrik" style = {{color: 'Black'}}>Non-Alcoholic Drinks</h2>
             <br/>
             <div className="row row-cols-sm-2 row-cols-md-3 row-cols-xxl-6">
 				{

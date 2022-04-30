@@ -4,6 +4,7 @@ import DrinkList from "./pages/Drinks";
 import NonList from "./pages/Non";
 import Recipe from "./pages/Recipe";
 import Search from "./pages/Search";
+import SignIn from "./pages/SignIn";
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 
 function App(){
@@ -22,6 +23,7 @@ function App(){
                             <Route path="/non" element={<NonList />}/>
                             <Route path="/popular/:drinkID" element={<Recipe />}/>
                             <Route path="/search" element={<Search />}/>
+                            <Route path="/login" exact element={<SignIn/>}/>
                         </Routes>
                     </div>
                 </div>

@@ -5,8 +5,8 @@ body, html {
 }
 body {
   font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
-  background: linear-gradient(180deg, #6EC4DB, #1ac6ff);
-  background-attachment: scroll;
+  background: linear-gradient(180deg, #6EC4DB, #FA7C92);
+  background-attachment: fixed;
 }
 .book-img{
   height: 10.625rem;
@@ -15,7 +15,7 @@ body {
 }
 .book-card-details, .on-list{
   font-size: 14px;
-  color:#333;
+  color: #0e0e0e;
 }
 .on-list {
   font-size: 11px;
@@ -29,6 +29,7 @@ body {
 .book-author{
   font-style: italic;
   font-size: 15px;
+  color: #252525;
 }
 .book-title > .badge {
   font-size: 1rem;
@@ -54,14 +55,14 @@ body {
   color: black;
 }
 .mix:hover {
-  color: #14d2b9;
+  color: #ffc400;
 }
 .ht {
   text-decoration: none;
   color: black;
 }
 .ht:hover {
-  color: #ff0000;
+  color: #ffc400;
 }
 .shrik {
   font-family: 'Shrikhand';
@@ -71,8 +72,129 @@ body {
   --bs-bg-opacity: 1;
   background-color: rgba(246, 1, 1, 0.76);
 }
-.recipe-img{
-  height: 17.625rem;
-  max-width: 8.25rem;
+.drinkCard-img{
+  height: 100%;
+  width: 100%;
   padding-top: 0;
+  border-radius: 0.25rem;
+}
+
+.recipe-img{
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+#form {
+  background-image: linear-gradient(180deg, #FA7C92, #6EC4DB);
+  width: 800px;
+  height: 88px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.input {
+  all: unset;
+  font-size: larger;
+  font-family: Shrikhand;
+  color: #000000;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+::placeholder {
+  color: #000000;
+  opacity: 0.7;
+}
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+button:hover
+{
+  color: #ffc400;
+}
+
+.card {
+  background-image: linear-gradient(180deg, #FA7C92, #6EC4DB);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border: none!important;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.searchCard {
+  width: 800px;
+  height: 88px;
+}
+
+.clickCard:active {
+  box-shadow: none;
+}
+
+.back {
+  background-image: linear-gradient(180deg, #FA7C92, #6EC4DB);
+  width: 800px;
+  height: 88px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.back-input {
+  all: unset;
+  font-size: larger;
+  font-family: Shrikhand;
+  color: #000000;
+  height: 75%;
+  width: 25%;
+  padding: 6px 10px;
+}
+
+.fa-ban, .fa-search, .fa-bottle-droplet, .fa-martini-glass-citrus{
+  filter: drop-shadow(7px 10px 1px rgba(0, 0, 0, 0.38))
+}
+
+.fa-ban:active, .fa-search:active, .fa-bottle-droplet:active, .fa-martini-glass-citrus:active{
+  filter: none;
+}
+
+body.login {
+  background-image: url("http://localhost:3000/img/restaurant.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body.login .justify-content-start + div {
+  padding-left: 0;
+}
+body.login .card{
+  border-radius: 0;
+}
+
+.navbar{
+  background-color: #fafac0;
+}
+
+.w-94 {
+  width: 94%!important;
+}
+.body {
+  background: linear-gradient(180deg, #6EC4DB, #FA7C92);
 }

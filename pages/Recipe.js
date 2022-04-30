@@ -11,12 +11,13 @@ class Recipes extends Component {
     constructor(props) {
         super(props);
         this.drink = this.props.params.drinkID;
+        this.apiKey = process.env["REACT_APP_DRINK_API_KEY"];
         console.log(props);
         this.state = {drink: {}};
     }
 
     componentDidMount() {
-        const DRINK_URL = `https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=${this.drink}`;
+        const DRINK_URL = "https://www.thecocktaildb.com/api/json/v2/" + this.apiKey + "/lookup.php?i=" + this.drink;
         const getDrink = async () => {
             await axios.get(DRINK_URL)
                 .then(response => {
@@ -29,13 +30,17 @@ class Recipes extends Component {
     }
 
 render() {
+        const link1 = "/popular";
+        const link2 = "/non";
+
 
         let val = "strIngredient";
         let val2 = "strMeasure";
         let displayList = [];
 
         for(let i = 1; i <=15; ++i)
-            if(this.state.drink[val + i] != null && this.state.drink[val + i] != ""){
+            if(this.state.drink[val + i] != null && this.state.drink[val + i] != "")
+            {
                 let str = "";
 
                 if(this.state.drink[val2 + i] != null && this.state.drink[val2 + i] != "")
@@ -47,12 +52,14 @@ render() {
         return (
             <>
                 <br/>
-                <br/>
-                <div className = "container col mb-3">
-                    <Header />
-                </div>
+                <Header />
+                <h2 className = "text-center" style = {{marginRight: 15}}>
+                    <Link to = {link1} className = "mix shrik">Popular &nbsp;</Link>
+                    <Link to = {link2} className = "mix shrik">Non-Alcoholic</Link>
+                </h2>
                 <div className = "container">
                     <div className="col mb-3" >
+                        <br/>
                         <div className="card h-100 position-relative">
                             <div className="row g-0">
                                 <div className = "col-md-4">
@@ -60,13 +67,14 @@ render() {
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body book-card-details">
-                                            <h4 className="card-title book-title">
+                                            <h3 className="card-title" style = {{fontFamily: 'Shrikhand'}}>
                                                 {this.state.drink.strDrink}
                                                 <span className="badge position-absolute top-0 start-0 rounded-pill translate-middle bg-color">
                                                     {this.state.drink.strAlcoholic}
                                                 </span>
-                                            </h4>
-                                        <h5 className="card-subtitle mb-2 text-muted book-author">{this.state.drink.strCategory}</h5>
+                                            </h3>
+                                        <h4 className="card-subtitle mb-2 book-author">{this.state.drink.strCategory}</h4>
+                                        <br/>
                                         {
                                             displayList.map((measures) => {
                                                 return(
@@ -74,6 +82,8 @@ render() {
                                                 )
                                             })
                                         }
+                                        <br/>
+                                        <p>{this.state.drink.strInstructions}</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +92,7 @@ render() {
                 </div>
             </>
         );
-   }
+    }
 }
 
 const Recipe = withParams(Recipes);
