@@ -104,7 +104,7 @@ Stores drink recipes and presents them in a user-friendly way. Users can search 
 ```
 Existing API Endpoints
 An API for drinks
-Base URL - https://www.thecocktaildb.com/api/json/v2/
+Base URL - https://www.thecocktaildb.com/api/json/v2/api_key
 
 HTTP Verb	Endpoint	Description
 GET	       /popular.php	                    get list of popular drinks
