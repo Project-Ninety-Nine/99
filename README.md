@@ -140,9 +140,6 @@ Allow user to search for a specific drink.
 
 Current Project Images:
 
-- Login Page
-![alt text](https://github.com/The-JAM/FirstRepo/blob/main/SignInPage.png)
-
 - Home Page
 ![alt text](https://github.com/The-JAM/FirstRepo/blob/main/HomePage.png)
 
@@ -153,4 +150,4 @@ Current Project Images:
 ![alt text](https://github.com/The-JAM/FirstRepo/blob/main/CartPage.png)
 
 - Current Project Gif
-![alt text](https://github.com/The-JAM/FirstRepo/blob/main/CurrentProject.gif)
+![alt text]()
