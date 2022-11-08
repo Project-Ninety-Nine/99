@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4cd6ca32.css",
+    "main.js": "/static/js/main.b6f890db.js",
+    "static/media/Cocktail-Making-Techniques.jpg": "/static/media/Cocktail-Making-Techniques.350ecd930b7118997cb2.jpg",
+    "index.html": "/index.html",
+    "main.4cd6ca32.css.map": "/static/css/main.4cd6ca32.css.map",
+    "main.b6f890db.js.map": "/static/js/main.b6f890db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cd6ca32.css",
+    "static/js/main.b6f890db.js"
+  ]
+}
